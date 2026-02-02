@@ -7,14 +7,15 @@ class student:
         print(self.name,self.roll_num,self.marks)
     def result(self):
         if self.marks>=70:
-            print(self.marks)
+            print("Pass")
         else:
-            print("marks<70")
+            print("Fail")
 obj1=student("vijaya",205,80)
 obj1.display()
 obj1.result()
 
-
+        
+        
 output:
 vijaya 205 80
-80
+Pass
