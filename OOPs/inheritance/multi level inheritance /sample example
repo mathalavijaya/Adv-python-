@@ -1,0 +1,51 @@
+class BankAccount:
+    def __init__ (self,Account_num,cus_name,balance):
+        self.Account_num=Account_num
+        self.cus_name=cus_name
+        self.balance=balance
+    def display(self):
+        print(self.Account_num, self.cus_name,self.balance)
+obj1=BankAccount( 23456,"vijaya", 1400)
+
+        
+class Student(BankAccount):
+    def __init__(self, name, roll_no, marks):
+        self.name = name          # attribute
+        self.roll_no = roll_no    # attribute
+        self.marks = marks        # attribute
+
+    def display(self):            # method
+        print(self.name, self.roll_no, self.marks)
+
+    def result(self):             # method
+        if self.marks >= 35:
+            print("Pass")
+        else:
+            print("Fail")
+
+s1 = Student("Ravi", 101, 78)
+s1.display()
+s1.result()
+
+        
+        
+    
+class Employee(Student):
+    def __init__(self, emp_id, name, salary):
+        self.emp_id= emp_id
+        self.name= name
+        self.salary= salary
+        
+    def Display(self):
+        print("Employee_ID:",self.emp_id)
+        print("Name:",self.name)
+        obj1.display()
+        print("Salary:",self.salary)
+e1 = Employee(101, "Vijaya", 30000)
+e2 = Employee(102, "Ravi", 40000)
+
+
+e1.Display()
+print("-----")
+e2.Display()
+print("-----")
