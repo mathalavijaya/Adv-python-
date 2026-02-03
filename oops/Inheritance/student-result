@@ -1,0 +1,13 @@
+#single inheritance student--result
+class Student():
+    def __init__(self,name,roll_num):
+        self.name=name
+        self.roll_num=roll_num
+
+class Result(Student):
+    def show_Result(self,marks):
+        print(self.name,self.roll_num,marks)
+r= Result("vijaya",405)
+r.show_Result(75)
+
+        output=vijaya 405 75
